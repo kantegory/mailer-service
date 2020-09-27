@@ -7,7 +7,7 @@ let config = conf.parse(fs.readFileSync(confPath, 'utf-8'));
 
 const transporter = nodemailer.createTransport({
   host: config.mailer.host,
-  port: consif.mailer.port,
+  port: config.mailer.port,
   auth: {
     user: config.mailer.user,
     pass: config.mailer.pass
