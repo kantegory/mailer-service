@@ -5,8 +5,8 @@ Conflicts=getty@tty1.service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/node /var/www/mailer/index.js
-WorkingDirectory=/var/www/mailer/
+ExecStart=/usr/bin/node /var/www/mailer-service/index.js
+WorkingDirectory=/var/www/mailer-service/
 Restart=always
 User=root
 Group=root
