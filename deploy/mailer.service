@@ -1,0 +1,15 @@
+[Unit]
+Description=Mailer service
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /var/www/mailer/index.js
+WorkingDirectory=/var/www/mailer/
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
